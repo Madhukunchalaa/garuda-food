@@ -53,50 +53,46 @@
   </div>
 </nav>
     <!-- Hero -->
-    <section class="menu-hero">
-      <div class="hero-content text-center">
-        <h1 class="hero-title animate-in">Our Menus</h1>
-        <div class="hero-divider"></div>
-        <p class="hero-subtitle animate-in" style="animation-delay: 0.1s;">A journey through the finest flavors of India</p>
+    <section class="menu-hero-grand">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container text-center">
+        <h1 class="hero-title-grand animate-in">A Culinary <span>Masterpiece</span></h1>
+        <div class="hero-divider-gold"></div>
+        <p class="hero-subtitle-grand animate-in" style="animation-delay: 0.1s;">Explore 7 unique kitchens, 100+ flavors, and a legacy of taste.</p>
       </div>
     </section>
 
-    <!-- ── Tabbed Menu Section ──────────────────────────────── -->
-    <section class="menu-tabs-section py-5">
-      <div class="container py-lg-5">
-        
-        <!-- Tab Navigation -->
-        <div class="tabs-nav-container mb-5">
-          <ul class="nav nav-pills justify-content-center" id="menuTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="south-tab" data-bs-toggle="pill" data-bs-target="#south" type="button" role="tab">SOUTH INDIAN</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="andhra-tab" data-bs-toggle="pill" data-bs-target="#andhra" type="button" role="tab">ANDHRA MEALS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="biryani-tab" data-bs-toggle="pill" data-bs-target="#biryani" type="button" role="tab">BIRYANI</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="north-tab" data-bs-toggle="pill" data-bs-target="#north" type="button" role="tab">NORTH INDIAN</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="fried-tab" data-bs-toggle="pill" data-bs-target="#fried" type="button" role="tab">FRIED CHICKEN</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="chats-tab" data-bs-toggle="pill" data-bs-target="#chats" type="button" role="tab">CHATS</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="dessert-tab" data-bs-toggle="pill" data-bs-target="#dessert" type="button" role="tab">DESSERTS</button>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Tab Content -->
-        <div class="tab-content" id="menuTabsContent">
+    <!-- ── Main Menu Content ────────────────────────────────── -->
+    <section class="menu-main-wrap py-5">
+      <div class="container-fluid px-lg-5">
+        <div class="row">
           
-          <!-- South Indian -->
-          <div class="tab-pane fade show active" id="south" role="tabpanel">
+          <!-- Sticky Sidebar Navigation -->
+          <aside class="col-lg-3 d-none d-lg-block">
+            <div class="sticky-sidebar">
+              <h4 class="sidebar-title">Categories</h4>
+              <ul class="sidebar-nav list-unstyled" id="menu-sidebar">
+                <li><a href="#south-indian" class="active">South Indian Tiffins</a></li>
+                <li><a href="#andhra-meals">Andhra Full Meals</a></li>
+                <li><a href="#biryani">Biryani & Pulav</a></li>
+                <li><a href="#north-indian">North Indian Cuisine</a></li>
+                <li><a href="#fried-chicken">KFC Style Chicken</a></li>
+                <li><a href="#chats">Chats & Snacks</a></li>
+                <li><a href="#desserts">Desserts & Beverages</a></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Menu Sections -->
+          <div class="col-lg-9">
+            
+            <!-- Category: South Indian -->
+            <div id="south-indian" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">01</span>
+                <h2 class="category-title">South Indian <span>Tiffins</span></h2>
+                <p class="category-tagline">"Fresh from the griddle, every single morning."</p>
+              </div>
     <!-- Counter 1 — South Indian Tiffins -->
     <section class="counter-section" id="c1">
       <div class="section-watermark">01</div>
@@ -208,10 +204,15 @@
         <a href="#" class="view-all-btn">View All Tiffins</a>
       </div>
     </section>
-          </div><!-- End South Indian -->
+            </div><!-- End South Indian -->
 
-          <!-- Andhra Meals -->
-          <div class="tab-pane fade" id="andhra" role="tabpanel">
+            <!-- Category: Andhra Meals -->
+            <div id="andhra-meals" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">02</span>
+                <h2 class="category-title">Andhra Full <span>Meals</span></h2>
+                <p class="category-tagline">"The authentic taste of the Telugu land."</p>
+              </div>
     <!-- Counter 2 — Andhra Meals -->
     <section class="counter-section" id="c2">
       <div class="section-watermark">02</div>
@@ -316,10 +317,15 @@
         <a href="#" class="view-all-btn">View Full Meals Menu</a>
       </div>
     </section>
-          </div><!-- End Andhra Meals -->
+            </div><!-- End Andhra Meals -->
 
-          <!-- Biryani -->
-          <div class="tab-pane fade" id="biryani" role="tabpanel">
+            <!-- Category: Biryani -->
+            <div id="biryani" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">03</span>
+                <h2 class="category-title">Biryani & <span>Pulav</span></h2>
+                <p class="category-tagline">"Legendary Hyderabadi flavors in every grain."</p>
+              </div>
     <!-- Counter 3 — Biryani -->
     <section class="counter-section" id="c3">
       <div class="section-watermark">03</div>
@@ -426,10 +432,15 @@
         <a href="#" class="view-all-btn">Explore Biryani Menu</a>
       </div>
     </section>
-          </div><!-- End Biryani -->
+            </div><!-- End Biryani -->
 
-          <!-- North Indian -->
-          <div class="tab-pane fade" id="north" role="tabpanel">
+            <!-- Category: North Indian -->
+            <div id="north-indian" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">04</span>
+                <h2 class="category-title">North Indian <span>Cuisine</span></h2>
+                <p class="category-tagline">"Rich gravies and butter-soft tandoori breads."</p>
+              </div>
     <!-- Counter 4 — North Indian -->
     <section class="counter-section" id="c4">
       <div class="section-watermark">04</div>
@@ -505,10 +516,15 @@
         <a href="#" class="view-all-btn">Full North Indian Menu</a>
       </div>
     </section>
-          </div><!-- End North Indian -->
+            </div><!-- End North Indian -->
 
-          <!-- Fried Chicken -->
-          <div class="tab-pane fade" id="fried" role="tabpanel">
+            <!-- Category: Fried Chicken -->
+            <div id="fried-chicken" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">05</span>
+                <h2 class="category-title">KFC Style <span>Chicken</span></h2>
+                <p class="category-tagline">"Extra crispy, extra juicy, pure comfort."</p>
+              </div>
     <!-- Counter 5 — KFC -->
     <section class="counter-section" id="c5">
       <div class="section-watermark">05</div>
@@ -605,10 +621,15 @@
         <a href="#" class="view-all-btn">View KFC Menu</a>
       </div>
     </section>
-          </div><!-- End Fried Chicken -->
+            </div><!-- End Fried Chicken -->
 
-          <!-- Chats -->
-          <div class="tab-pane fade" id="chats" role="tabpanel">
+            <!-- Category: Chats -->
+            <div id="chats" class="menu-category-section mb-5">
+              <div class="category-header-wrap">
+                <span class="category-number">06</span>
+                <h2 class="category-title">Chats & <span>Snacks</span></h2>
+                <p class="category-tagline">"Sweet, tangy, and spicy street favorites."</p>
+              </div>
     <!-- Counter 6 — Chaat & Snacks -->
     <section class="counter-section" id="c6">
       <div class="section-watermark">06</div>
