@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garuda Foodcourts – Menu</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
@@ -21,101 +19,84 @@
     <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
-    <!-- Navigation -->
-    <nav>
-      <a href="#" class="nav-logo">GARUDA <span>Foodcourts</span></a>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#" class="active">Menu</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <a href="#" class="nav-cta">Order Now</a>
-    </nav>
+    <!-- ── Top Bar ────────────────────────────────────────────── -->
+<div class="top-bar d-none d-lg-flex">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="top-bar-left">
+      <span><i class="bi bi-telephone"></i> +91 91113 22222</span>
+      <span><i class="bi bi-envelope"></i> garudafoodcourts@gmail.com</span>
+      <span><i class="bi bi-clock"></i> Daily: 6:30 am to 11:45 pm</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar-main">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+    <a href="#" class="nav-logo">
+      <img src="https://garudafoodcourts.com/wp-content/uploads/2023/10/Garuda-Logo-1-1.png" alt="Garuda Logo" class="logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#" class="active">MENU</a></li>
+      <li><a href="#">REVIEWS</a></li>
+      <li><a href="#">FIND US</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+    <a href="tel:+919111322222" class="nav-cta-call">CALL NOW</a>
+  </div>
+</nav>
     <!-- Hero -->
     <section class="menu-hero">
-      <div class="hero-bg-pattern"></div>
-      <div class="hero-number">MENU</div>
-      <div class="animate-in delay-1">
-        <div class="hero-eyebrow">The Menu</div>
-      </div>
-      <div class="animate-in delay-2">
-        <h1 class="hero-headline">
-          What Are You<br /><em>In The Mood For?</em>
-        </h1>
-      </div>
-      <p class="hero-subtitle animate-in delay-3">
-        8 counters. 100+ dishes. Breakfast to late night.
-      </p>
-      <div class="hero-stats animate-in delay-4">
-        <div class="stat-item">
-          <div class="stat-num">8</div>
-          <div class="stat-label">Live Counters</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num">100+</div>
-          <div class="stat-label">Dishes Daily</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num">6AM</div>
-          <div class="stat-label">Opens Early</div>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <div class="stat-num">12K+</div>
-          <div class="stat-label">Families / Month</div>
-        </div>
+      <div class="hero-content text-center">
+        <h1 class="hero-title animate-in">Our Menus</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle animate-in" style="animation-delay: 0.1s;">A journey through the finest flavors of India</p>
       </div>
     </section>
-    <!-- Ticker Strip -->
-    <div class="quote-strip">
-      <div class="quote-inner">
-        <span class="quote-strip-text">SOUTH INDIAN TIFFINS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">ANDHRA MEALS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">BIRYANI</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">NORTH INDIAN</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">KFC</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">CHAAT &amp; SNACKS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">DESSERTS &amp; BEVERAGES</span
-        ><span class="quote-strip-dot"></span>
-        <!-- Duplicate set for seamless loop -->
-        <span class="quote-strip-text">SOUTH INDIAN TIFFINS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">ANDHRA MEALS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">BIRYANI</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">NORTH INDIAN</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">KFC</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">CHAAT &amp; SNACKS</span
-        ><span class="quote-strip-dot"></span>
-        <span class="quote-strip-text">DESSERTS &amp; BEVERAGES</span
-        ><span class="quote-strip-dot"></span>
-      </div>
-    </div>
-    <!-- Counter Navigation -->
-    <div class="counter-nav">
-      <div class="counter-nav-inner">
-        <a href="#c1" class="counter-nav-item active">South Indian Tiffins</a>
-        <a href="#c2" class="counter-nav-item">Andhra Meals</a>
-        <a href="#c3" class="counter-nav-item">Biryani</a>
-        <a href="#c4" class="counter-nav-item">North Indian</a>
-        <a href="#c5" class="counter-nav-item">KFC</a>
-        <a href="#c6" class="counter-nav-item">Chaat &amp; Snacks</a>
-        <a href="#c7" class="counter-nav-item">Desserts &amp; Beverages</a>
-      </div>
-    </div>
+
+    <!-- ── Tabbed Menu Section ──────────────────────────────── -->
+    <section class="menu-tabs-section py-5">
+      <div class="container py-lg-5">
+        
+        <!-- Tab Navigation -->
+        <div class="tabs-nav-container mb-5">
+          <ul class="nav nav-pills justify-content-center" id="menuTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="south-tab" data-bs-toggle="pill" data-bs-target="#south" type="button" role="tab">SOUTH INDIAN</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="andhra-tab" data-bs-toggle="pill" data-bs-target="#andhra" type="button" role="tab">ANDHRA MEALS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="biryani-tab" data-bs-toggle="pill" data-bs-target="#biryani" type="button" role="tab">BIRYANI</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="north-tab" data-bs-toggle="pill" data-bs-target="#north" type="button" role="tab">NORTH INDIAN</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="fried-tab" data-bs-toggle="pill" data-bs-target="#fried" type="button" role="tab">FRIED CHICKEN</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="chats-tab" data-bs-toggle="pill" data-bs-target="#chats" type="button" role="tab">CHATS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="dessert-tab" data-bs-toggle="pill" data-bs-target="#dessert" type="button" role="tab">DESSERTS</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="menuTabsContent">
+          
+          <!-- South Indian -->
+          <div class="tab-pane fade show active" id="south" role="tabpanel">
     <!-- Counter 1 — South Indian Tiffins -->
     <section class="counter-section" id="c1">
       <div class="section-watermark">01</div>
@@ -227,6 +208,10 @@
         <a href="#" class="view-all-btn">View All Tiffins</a>
       </div>
     </section>
+          </div><!-- End South Indian -->
+
+          <!-- Andhra Meals -->
+          <div class="tab-pane fade" id="andhra" role="tabpanel">
     <!-- Counter 2 — Andhra Meals -->
     <section class="counter-section" id="c2">
       <div class="section-watermark">02</div>
@@ -331,6 +316,10 @@
         <a href="#" class="view-all-btn">View Full Meals Menu</a>
       </div>
     </section>
+          </div><!-- End Andhra Meals -->
+
+          <!-- Biryani -->
+          <div class="tab-pane fade" id="biryani" role="tabpanel">
     <!-- Counter 3 — Biryani -->
     <section class="counter-section" id="c3">
       <div class="section-watermark">03</div>
@@ -437,6 +426,10 @@
         <a href="#" class="view-all-btn">Explore Biryani Menu</a>
       </div>
     </section>
+          </div><!-- End Biryani -->
+
+          <!-- North Indian -->
+          <div class="tab-pane fade" id="north" role="tabpanel">
     <!-- Counter 4 — North Indian -->
     <section class="counter-section" id="c4">
       <div class="section-watermark">04</div>
@@ -512,6 +505,10 @@
         <a href="#" class="view-all-btn">Full North Indian Menu</a>
       </div>
     </section>
+          </div><!-- End North Indian -->
+
+          <!-- Fried Chicken -->
+          <div class="tab-pane fade" id="fried" role="tabpanel">
     <!-- Counter 5 — KFC -->
     <section class="counter-section" id="c5">
       <div class="section-watermark">05</div>
@@ -608,6 +605,10 @@
         <a href="#" class="view-all-btn">View KFC Menu</a>
       </div>
     </section>
+          </div><!-- End Fried Chicken -->
+
+          <!-- Chats -->
+          <div class="tab-pane fade" id="chats" role="tabpanel">
     <!-- Counter 6 — Chaat & Snacks -->
     <section class="counter-section" id="c6">
       <div class="section-watermark">06</div>
@@ -701,18 +702,8 @@
       <div class="counter-header">
         <div>
           <div class="counter-number-badge">Counter 07</div>
-          <h2 class="counter-name">Desserts <em>&amp; Beverages</em></h2>
-          <p class="counter-tagline">"Finish sweet. Drive happy."</p>
-          <div class="gold-divider"></div>
-          <p class="counter-desc">
-            Ice cream, milkshakes, fresh juices, and traditional sweets. The
-            best way to end your stop — or bribe the kids into getting back in
-            the car.
-          </p>
-        </div>
-      </div>
-      <div class="dishes-grid">
-        <div class="row g-2">
+      <div class="container px-4">
+        <div class="row align-items-center g-5">
           <div class="col-lg-4">
             <div class="dish-card">
               <div class="dish-img-placeholder hero-img">
@@ -721,69 +712,16 @@
               <div class="dish-info">
                 <div>
                   <span class="dish-tag veg">Veg</span>
-                  <span class="dish-tag special">Traditional</span>
                 </div>
-                <div class="dish-name">Gulab Jamun with Rabri</div>
-                <p class="dish-desc">
-                  Melt-in-mouth jamuns drowning in thick, saffron-scented rabri.
-                </p>
-                <div class="dish-price">₹ 120 <span>/ serving</span></div>
+                <div class="dish-name">Rabri Gulab Jamun</div>
+                <div class="dish-desc">
+                  Hot golden jamuns served with chilled creamy saffron rabri.
+                </div>
+                <div class="dish-price">₹145</div>
               </div>
             </div>
           </div>
           <div class="col-lg-8">
-            <div class="row g-2">
-              <div class="col-4">
-                <div class="dish-card">
-                  <div class="dish-img-placeholder">
-                    <div class="img-placeholder-icon">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <span class="img-placeholder-label">Milkshake</span>
-                  </div>
-                  <div class="dish-info">
-                    <div><span class="dish-tag veg">Veg</span></div>
-                    <div class="dish-name">Classic Milkshake</div>
-                    <div class="dish-price">₹ 120</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="dish-card">
-                  <div class="dish-img-placeholder">
-                    <div class="img-placeholder-icon">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1"
-                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <span class="img-placeholder-label">Fresh Juice</span>
-                  </div>
-                  <div class="dish-info">
-                    <div><span class="dish-tag veg">Veg</span></div>
-                    <div class="dish-name">Fresh Juice</div>
-                    <div class="dish-price">₹ 90</div>
-                  </div>
-                </div>
               </div>
               <div class="col-4">
                 <div class="dish-card">
